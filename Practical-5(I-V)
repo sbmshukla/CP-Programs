@@ -1,0 +1,94 @@
+// I. Write a program to check given number is odd or even.
+
+#include<stdio.h>
+int main()
+{
+    int number;
+    printf("Enter number: ");
+    scanf("%d",&number);
+    if (number%2==0){
+        printf("The Given Number %d Is even!",number);
+    }
+    else{
+        printf("The Given Number %d Is odd!",number);
+    }
+    return 0;
+}
+
+// II. Write a program to check number is positive, negative or zero
+#include<stdio.h>
+int main()
+{
+    int number;
+    printf("Enter number: ");
+    scanf("%d",&number);
+    if (number>0){
+        printf("The Given Number Is Positive!");
+    }
+    else if (number<0){
+        printf("The Given Number Is Negative!");
+    }
+    else{
+        printf("The Given Number Is Zero!");
+    }
+    return 0;
+}
+
+/*
+III. Write a program to print grade of student using ladder if –else statement.
+Percentage < = 40 (Fail)
+Percentage < = 50 (D GRADE)
+Percentage < = 60 (C GRADE)
+Percentage < = 75 (B GRADE)
+Percentage > 75 (A GRADE)
+*/
+
+#include<stdio.h>
+int main()
+{
+    int pr;
+    printf("Enter Marks (Out Of 100):");
+    scanf("%d",&pr);
+    if (pr<=40){
+        printf("Fail!");
+    }
+    else if (pr<=50){
+        printf("D Grade!");
+    }
+     else if (pr<=60){
+        printf("C Grade!");
+    }
+    else if (pr<=75){
+        printf("B Grade!");
+    }
+    else if (pr>75 &&pr<=100){
+        printf("A Grade!");
+    }
+    else{
+        printf("Invalid Input!");
+    }
+    return 0;
+}
+
+// IV. Write a program to find Maximum number among 3 numbers using nested if statement.
+#include <stdio.h>
+int main() {
+    double n1, n2, n3;
+    printf("Enter three numbers: ");
+    scanf("%lf %lf %lf", &n1, &n2, &n3);
+
+    if (n1 >= n2) {
+        if (n1 >= n3)
+            printf("%.2lf is the largest number.", n1);
+        else
+            printf("%.2lf is the largest number.", n3);
+    } else {
+        if (n2 >= n3)
+            printf("%.2lf is the largest number.", n2);
+        else
+            printf("%.2lf is the largest number.", n3);
+    }
+
+    return 0;
+}
+
