@@ -1,0 +1,51 @@
+// sizeof variable
+/*
+#include <stdio.h>
+int main()
+{
+    printf("%lu",sizeof(int));
+    return 0;
+}
+*/
+
+
+
+// I. Write a program for type casting from integer to float.
+/*
+#include <stdio.h>
+int main()
+{
+    int num_int = 17;
+    printf("%d\n", num_int);
+    float num_float = (float)num_int;
+    printf("%.2f", num_float);
+    return 0;
+}
+*/
+
+
+/* II. Write a program for Entering student details like Name, Address, Contact Number, and
+semester.
+*/
+/*
+#include <stdio.h>
+int main()
+{
+    char name[20];
+    printf("Name:\n");
+    gets(name);
+    char address[100];
+    printf("Address:\n");
+    gets(address);
+    long double contact_no;
+    printf("Contact Number:\n");
+    scanf("%Lf", &contact_no);
+    char semester;
+    printf("Semester:\n");
+    scanf("%s", &semester);
+
+    printf("---------------------Student Details--------------------\n");
+    printf("=>Name:%s\n=>Address:%s\n=>Contact Number:%.0Lf\n=>Semester:%c",name,address,contact_no,semester);
+    return 0;
+}
+*/
