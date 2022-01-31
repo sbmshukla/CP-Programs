@@ -1,0 +1,66 @@
+//I. Find Area of Circle using constant.
+/*
+#include<stdio.h>
+int main()
+{
+	const float pi=3.14;
+	int radius;
+	float area;
+	printf("Enter Radius:");
+    
+	scanf("%d",&radius);
+
+	area=pi * (radius * radius);
+    
+	printf("Area of Circle: %.2f",area);
+    
+	return 0;
+}
+*/
+
+
+//II. Find Area of Rectangle using constant.
+/*
+#include<stdio.h>
+int main()
+{    
+	int length,breadth, area;
+	printf("Enter length and breadth of rectangle:");   
+	scanf("%d %d",&length,&breadth);
+	area=length * breadth;
+	printf("\nArea of Rectangle: %d",area);    
+	return 0;
+}
+*/
+
+
+//III. Find Area of Triangle using constant
+/*
+#include<stdio.h>
+int main()
+{
+	int base,height,area;
+	printf("Enter base and height of trianlge:");
+	scanf("%d %d",&base,&height);
+	area=(base*height)/2;   
+	printf("\nArea of Triangle:%d",area);
+	return 0;
+}
+*/
+
+
+//IV. Perform simple calculator using Arithmetic Expressions.
+/*
+#include <stdio.h>
+int main()
+{
+    int num1=55;
+    int num2=10;
+    printf("%d + %d = %d\n",num1,num2,num1+num2);
+    printf("%d - %d = %d\n",num1,num2,num1-num2);
+    printf("%d * %d = %d\n",num1,num2,num1*num2);
+    printf("%d / %d = %d\n",num1,num2,num1/num2);
+    printf("%d %% %d = %d\n",num1,num2,num1%num2);  
+    return 0;
+}
+*/
