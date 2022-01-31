@@ -1,0 +1,80 @@
+// I. Write a program to perform menu driven program using switch case.
+// Menu-Driven program
+// using Switch-case
+
+#include <stdio.h>
+int main()
+{
+	float result;
+	int choice, num;
+	printf("Enter 1 to find area of circle\n");
+	printf("Enter 2 to find area of square\n");
+	printf("Enter 3 to find area of sphere\n");
+	printf("Enter your choice:");
+    scanf("%d",&choice);
+	
+	switch (choice) {
+	case 1: {
+		printf("Enter radius:\n");
+		scanf("%d",&num);
+		result = 3.14 * num * num;
+		printf("Area of sphere=");
+		printf("%f", result);
+		break;
+	}
+	case 2: {
+		printf("Enter side of square:\n");
+		scanf("%d",&num);
+		result = num * num;
+		printf("Area of square=");
+		printf("%f", result);
+		break;
+	}
+	case 3: {
+		printf("Enter radius:\n");
+		scanf("%d",&num);
+		result = 4 * (3.14 * num * num);
+		printf("Area of sphere=");
+		printf("%f", result);
+		break;
+	}
+	default:
+		printf("Wrong Input\n");
+	}
+	return 0;
+}
+
+
+// II. Write a program to show the use of goto statement.
+/*
+#include <stdio.h>
+int main()
+{
+    int num, i = 1;
+    printf("Enter number:");
+    scanf("%d", &num);
+table: // we can customize the lable name here
+    printf("%d x %d = %d\n", num, i, num * i);
+    i++;
+    if (i <= 10)
+    {
+        goto table;
+    }
+}
+*/
+
+
+// III. Write a program to show the use of continue statement
+// /*
+#include <stdio.h>
+int main()
+{
+    for (int i = 1; i <=10;i++) {
+        if (i ==5){
+            continue;
+        }
+        printf("%d ",i);
+    }
+    return 0;
+}
+// */
